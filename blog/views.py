@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+#El metodo post_list recibe una peticion request
+#metodo render renderiza(construye) la plantilla
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
